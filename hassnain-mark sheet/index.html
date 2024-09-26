@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    Name: <p id="name"></p>
+    gender: <p id="gender"></p>
+    Total Marks: <p id="totalMarks"></p>
+    Obtained Marks: <p id="obtainedMarks"></p>
+    Percentage: <p id="percentage"></p>
+  
+
+     <script>
+        var name = prompt("Enter name");
+        document.getElementById("name").textContent = name;
+
+        var gender = prompt("enter your gender");
+        document.getElementById("gender").textContent = gender;
+
+        var totalMarks = Number(prompt("Enter Total Marks"));
+        document.getElementById("totalMarks").textContent = totalMarks;
+       
+        var obtainedMarks = Number(prompt("Enter Obtained Marks"));
+        document.getElementById("obtainedMarks").textContent = obtainedMarks
+
+        var calculation = ((obtainedMarks/totalMarks)*100).toFixed(2);
+        document.getElementById("percentage").textContent = calculation
+
+    </script>
+</body> 
+</html>
